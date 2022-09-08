@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel=stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+      <title>User Survey Project</title>
+   </head>
+<body>
+  <header>
+    <h1 id="title">User Survey Form</h1>
+  </header>
+<main>
+  <h2><p id="description">Tell us what you think!</p></h2>
+    <form id="survey-form">
+      <p><label
+          id="name-label">What's your name?</p>
+      <p><input required
+          class="input"
+          id="name"
+          type="text"
+          placeholder="My name is...">
+         </label></p>
+      <p><label
+          id="email-label">What's your email?</p>
+      <p><input required
+          class="input"
+          id="email"
+          type="email"
+          placeholder="My email is...">
+         </label></p>
+       <p><label
+           id="number-label">What's your favorite number?</p>
+       <p><input required
+           class="input"
+           id="number"
+           type="number"
+           min="13"
+           max="99"
+           placeholder="My favorite number is...">
+         </label></p>
+        <p><label
+            id="dropdown-menu">How did you hear about us?
+           <select
+            id="dropdown"
+            name="dropdown">
+             <option value="">(Select one :)</option>
+             <option value="1">Google</option>
+             <option value="2">Social Media</option>
+             <option value="3">Publication</option>
+             <option value="4">Other</option>
+            </select>
+         </label>
+        <p><label
+            id="recommend">Would you recommend us to your friends?
+        <p><input
+            type="radio"
+            value="1"
+            name="recommend"
+            checked />Definitely!</p>
+         <p><input
+             type="radio"
+             value="2"
+             name="recommend" />Maybe?</p>
+         <p><input
+             type="radio"
+             value="3"
+             name="recommend" />Nope.</p>
+           </label>
+          <fieldset><legend>What features do you enjoy in our product?</legend>
+         <p><input
+             type="checkbox"
+             name="checkbox"
+             value="affordability" />Affordability</p>
+         <p><input
+             type="checkbox"
+             name="checkbox"
+             value="accessibility" />Accessibility</p>
+          <p><input
+              type="checkbox"
+              name="checkbox"
+              value="aesthetic" />Aesthetics</p>
+          <p><input 
+              type="checkbox";
+              name="checkbox"
+              value="quality" />Quality</p>    
+          </fieldset>
+         <p><label id="textarea">Tell us about yourself!</p>
+         <p><textarea 
+             id="bio" 
+             name="bio"
+             rows="8" 
+             placeholder="Tell us more...">
+             </textarea></p>
+            </label>
+         <p><label id="submit-button"></p>
+            <input
+             id="submit"
+             type="submit"
+             value="Submit" />
